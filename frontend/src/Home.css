@@ -1,0 +1,80 @@
+.home-wrapper {
+    background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.home-container {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex; /* THIS SPLITS THE PAGE INTO TWO EQUAL SIDES */
+    flex-direction: row; /* Ensures side-by-side layout */
+    width: 900px;
+    height: 550px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1);
+}
+
+.side {
+    flex: 1; /* Forces both Tracker and Planner to take 50% width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    text-align: center;
+}
+
+/* Tracker Side (Left) - Using the white background from your login page */
+.tracker-side {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Planner Side (Right) - Using the Pastel Purple/Blue from your image */
+.planner-side {
+    background: linear-gradient(to bottom, #a6c1ee, #fbc2eb);
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.home-btn {
+    border-radius: 30px;
+    border: 1px solid #333;
+    padding: 15px 50px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+/* Matching the "Dusty Pink" button from your image */
+.tracker-side .home-btn {
+    background-color: #b5838d;
+    color: #fff;
+    border: none;
+}
+
+/* Ghost button for the Planner side */
+.planner-side .home-btn {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.home-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
